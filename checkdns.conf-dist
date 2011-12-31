@@ -1,0 +1,36 @@
+#
+# CheckDNS Configuration File
+# http://www.enderunix.org/checkdns/
+#
+
+# Name Server for querying. These are must be big and reliable.
+query_name_server1 = "199.232.41.12"  # ns1.gnu.org
+query_name_server2 = "144.122.199.90" # ns1.metu.edu.tr
+
+# Your authorative name servers
+name_server1 = "ns1.yourdomain.com"
+name_server2 = "ns2.yourdomain.com"
+
+# If your authorative name servers have names more than one
+# or if you have additional authorative name servers, specify them.
+# If you don't need this, set them to ""
+name_server1_extra = "dns1.yourdomain.com"
+name_server2_extra = "dns2.yourdomain.com"
+
+# DNS Server Software, bind or djbdns or 
+# "none" for usting txt file contains domain names line by line
+#dns_srv_sfw = "djbdns"
+dns_srv_sfw = "bind"
+#dns_srv_sfw = "none"
+
+# Dns configuration file
+#dns_conf_file = "/service/tinydns/root/data"
+dns_conf_file = "/etc/named.conf"
+#dns_conf_file = "/var/tmp/domains.txt"
+
+# Html output directory
+html_output_dir = "/usr/local/apache/htdocs/checkdns/"
+
+# Languge file.
+# Available languages: english, turkish, spanish, german
+lang_file = "/usr/local/share/checkdns/lang/english"

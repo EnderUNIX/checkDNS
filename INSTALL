@@ -1,0 +1,47 @@
+EnderUNIX CheckDNS INSTALL
+
+You must use Makefile that prepared to your Operating System. The default makefile for BSD based Operating Systems.
+For example to Linux users :
+
+# cp Makefile.Linux Makefile
+
+
+To install the compiled binary, type :
+
+# ./install.sh
+
+and binary file that named 'checkdns' will be installed to /usr/local/bin/ directory.
+
+edit /usr/local/etc/checkdns.conf and set variables. Especially to use dns_srv_sfw = "none" your dns_conf_file should contain domain names line by line.
+
+Example content of dns_conf_file :
+
+domain.com
+yourdomain.net
+mydomain.org
+ourdomain.net
+
+
+copy checkdns.css to Html Output Directory that assigned by you in checkdns.conf file (is named html_output_dir).
+
+
+To uninstall CheckDNS :
+
+# ./uninstall.sh or /usr/local/share/checkdns/uninstall.sh
+
+
+The program is tested on :
+
+ - FreeBSD 4.10 (gcc version 2.95.4 20020320)
+ - Slackware Linux 9.0 (gcc version 3.2.2)
+ - FreeBSD 5.3 (gcc version 3.4.2)
+ - GNU istanbuLX/Linux (gcc version 3.4.2)
+ - Debian GNU/Linux 3.3 (gcc version 3.3.5-1)
+ - OpenBSD 3.5 (gcc version 3.3.2)
+ - Sun Solaris 7 (SunOS 5.7) (gcc version 2.95.2)
+ - Sun Solaris 8 (SunOS 5.8) (gcc version 3.4.2)
+ - Sun Solaris 9 (SunOS 5.9) (gcc version 3.3.2)
+ - Redhat Linux 7.2 (gcc version 2.96-112.7.2)
+ - Gentoo Linux 2005.0 (gcc version 3.3.5)
+
+Please read README file for more good results.

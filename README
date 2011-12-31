@@ -1,0 +1,37 @@
+EnderUNIX CheckDNS README
+
+EnderUNIX CheckDNS
+Internet Domain Name Server analysis and reporter
+
+This program is a domain name server analysis and reporting tool.
+It checks and reports whether a domain name, hosted by your organization,
+is still in use, and if so, reports whether your name servers
+are still the delegated name servers of the domain name in question.
+
+Reports are generated both to the console and as HTML output. HTMLs also
+include information about the MX and WWW records of the domain name.
+
+The tool is expected to be of great use for Internet Service Providers who
+are in need of keeping track of lame dns records.
+
+
+You may uses this program and analysis domain names periodicaly with cron job,
+ and save html output files into your web server's appropriate place.
+
+An example cron job lines :
+
+17 01 * * * /usr/local/bin/checkdns 1> /dev/null 2> /dev/null
+
+10 01 * * * /usr/local/bin/checkdns -c /usr/local/etc/checkdns.conf 1> /dev/null 2> /dev/null
+10 02 * * * /usr/local/bin/checkdns -c /usr/local/etc/checkdns2.conf 1> /dev/null 2> /dev/null
+
+The Console Output results are same as html outputs. You can mail it to yourself with cron job line same as below..
+
+17 03 * * * /usr/local/bin/checkdns
+
+
+Comments for Outputs :
+
+The Html outputs have prepared with CSS support, you can change all appearance with your choose.
+
+For installation instructions please read INSTALL file.

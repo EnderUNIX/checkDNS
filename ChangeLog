@@ -1,0 +1,69 @@
+2005.06.06
+ - german language support to html outputs by Harry Brueckner.
+
+2005.05.03
+ - 0.5 Stable announced.
+
+2005.03.04
+ - spanish language support to html outputs by Juan de la Fuente Costa.
+
+2005.03.01
+ - support to domain names getting from txt file.
+ - djbdns support enhanced with 'Z' line support.
+
+2005.02.21
+ - CSS support has been added to Html outputs.
+
+2005.02.20
+ - Some modifications have been made for security reasons.
+
+2005.02.15
+ - Shell output arranged for regularity and mailing output with cron.
+ - install and uninstall scripts rearranged.
+ - Html output files rearranged.
+
+2005.02.12
+ - dns querying method replaced (from ns_name_uncompress to dn_expand) for platform independence.
+
+2005.02.11
+ - version number has increased to 0.5.
+
+2005.01.29
+ - Web server links added.
+ - ISP Name Server informations and query Name Server informations has added.
+ - domain statistics has added.
+ - djbdns support has added.
+
+2005.01.15
+ - Testing...
+
+2005.01.13
+ - shell arguments has seted.
+ - install and uninstall scripts has adapted.
+ - Mulite Language support has added.
+ - Configuration file support added.
+
+2005.01.09
+ - version 0.4 is coming.
+ - The big code file broken up into modules.
+
+2005.01.08
+ - added domain's Web Server IP addres information.
+ - added "No." vertical line in html files.
+ - Domain list sorted in alphabetical order.
+
+2004.12.27
+ - Domain list sorted by groups.
+
+2004.12.22
+ - Added independence from /etc/resolv.conf file.
+
+2004.12.21
+ - Added TR and EN Languge support.
+ - Added MX query support.
+
+2004.12.16
+ - Reslover library trainings.
+
+2004.10.21
+ - First thinks for these Codes.
